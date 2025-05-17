@@ -1,0 +1,97 @@
+// Navbar container
+nav {
+  background-color: #1e88e5; // nice blue
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+// Brand or logo area (optional)
+.brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+
+// Navigation links container
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+// Each link styling
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #ffeb3b; // bright accent color
+  }
+}
+
+// Active route link styling
+.nav-links a.active {
+  background-color: #ffeb3b;
+  color: #1e88e5;
+  font-weight: 700;
+  box-shadow: 0 0 8px #ffeb3b;
+}
+
+// Hamburger menu button (hidden on desktop)
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+}
+
+// Responsive styles for mobile devices
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #1e88e5;
+    flex-direction: column;
+    gap: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .nav-links.open {
+    max-height: 200px; // enough for 3-4 links
+  }
+
+  .nav-links a {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}

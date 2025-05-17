@@ -1,0 +1,28 @@
+:host {
+  display: block;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f4f6f8, #e4e8ec);
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 2rem auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.voter-list {
+  display: grid;
+  gap: 1.5rem;
+}
