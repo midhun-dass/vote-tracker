@@ -1,0 +1,55 @@
+    1  df -h
+    2  lsblk
+    3  sudo blkid
+    4  sudo apt update
+    5  sudo apt install ntfs-3g
+    6  sudo apt install exfat-fuse exfat-utils
+    7  sudo blkid | grep sda5
+    8  sudo blkid | grep sda4
+    9  [200~sudo apt-get update && clear
+   10  sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0
+   11  sudo apt-get update &&   sudo apt-get install -y aspnetcore-runtime-8.0
+   12  sudo apt-get install -y dotnet-runtime-8.0
+   13  sudo apt install zlib1g
+   14  dotnet --info
+   15  cd desktop
+   16  pwd
+   17  cd Desktop
+   18  dotnet new console -n ConsoleApp
+   19  cd ConsoleApp/
+   20  code .
+   21  dotnet run
+   22  [200~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
+   23  source ~/.bashrc
+   24  nvm install 18
+   25  nvm use 18
+   26  sudo apt update
+   27  sudo apt install curl
+   28  [200~curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+   29  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+   30  nano ~/.bashrc
+   31  source ~/.bashrc
+   32  command -v nvm
+   33  nvm install --lts
+   34  node -v
+   35  npm -v
+   36  npm install -g @angular/cli@16
+   37  npm install -g npm@11.3.0
+   38  ng version
+   39  nvm install 18
+   40  nvm alias default 18
+   41  nvm ls
+   42  nvm use 18
+   43  ng new my-angular-app
+   44  cd my-angular-app
+   45  ng new my-angular-app
+   46  ng version
+   47  npm install -g @angular/cli@16
+   48  ng version
+   49  ng new my-angular-app
+   50  cd my-angular-app
+   51  ng serve
+   52  history > my_commands.txt
+   53  ped
+   54  pwd
+   55  history > my_commands.txt

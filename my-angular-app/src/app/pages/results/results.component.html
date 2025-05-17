@@ -1,0 +1,21 @@
+<h2>Voting Results</h2>
+
+<h3>Summary</h3>
+<p>Total Votes: {{ agreedVoters.length + disagreedVoters.length }}</p>
+<p>Agreed: {{ agreedVoters.length }}</p>
+<p>Disagreed: {{ disagreedVoters.length }}</p>
+
+<hr />
+
+<h3>Agreed Voters</h3>
+<ul>
+  <li *ngFor="let voter of agreedVoters">{{ voter }}</li>
+</ul>
+
+<h3>Disagreed Voters</h3>
+<ul>
+  <li *ngFor="let voter of disagreedVoters">{{ voter }}</li>
+</ul>
+
+<hr />
+<button (click)="resetVotes()">Reset Votes</button>
