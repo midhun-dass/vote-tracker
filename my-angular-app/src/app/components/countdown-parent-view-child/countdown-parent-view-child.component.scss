@@ -1,0 +1,26 @@
+h3 {
+  color: #d81b60;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #00897b;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #00695c;
+  }
+}
+
+.seconds {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fb8c00;
+  margin-top: 1rem;
+}

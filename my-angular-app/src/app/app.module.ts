@@ -10,6 +10,7 @@ import { ResultsComponent } from './pages/results/results.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CountdownParentComponent } from './components/countdown-parent/countdown-parent.component';
+import { CountdownParentViewChildComponent } from './components/countdown-parent-view-child/countdown-parent-view-child.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CountdownParentComponent } from './components/countdown-parent/countdow
     ResultsComponent,
     NavbarComponent,
     CountdownTimerComponent,
-    CountdownParentComponent
+    CountdownParentComponent,
+    CountdownParentViewChildComponent
   ],
   imports: [
     BrowserModule,
