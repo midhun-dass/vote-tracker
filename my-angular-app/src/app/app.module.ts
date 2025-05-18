@@ -8,6 +8,8 @@ import { VoteTakerComponent } from './components/vote-taker/vote-taker.component
 import { HomeComponent } from './pages/home/home.component';
 import { ResultsComponent } from './pages/results/results.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
+import { CountdownParentComponent } from './components/countdown-parent/countdown-parent.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
     VoteTakerComponent,
     HomeComponent,
     ResultsComponent,
-    NavbarComponent
+    NavbarComponent,
+    CountdownTimerComponent,
+    CountdownParentComponent
   ],
   imports: [
     BrowserModule,
