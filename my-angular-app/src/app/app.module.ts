@@ -11,6 +11,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CountdownTimerComponent } from './components/countdown-timer/countdown-timer.component';
 import { CountdownParentComponent } from './components/countdown-parent/countdown-parent.component';
 import { CountdownParentViewChildComponent } from './components/countdown-parent-view-child/countdown-parent-view-child.component';
+import { MissionControlComponent } from './components/mission-control/mission-control.component';
+import { AstronautComponent } from './components/astronaut/astronaut.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -22,11 +28,17 @@ import { CountdownParentViewChildComponent } from './components/countdown-parent
     NavbarComponent,
     CountdownTimerComponent,
     CountdownParentComponent,
-    CountdownParentViewChildComponent
+    CountdownParentViewChildComponent,
+    MissionControlComponent,
+    AstronautComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    MatButtonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

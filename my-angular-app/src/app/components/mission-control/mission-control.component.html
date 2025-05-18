@@ -1,0 +1,23 @@
+<mat-card class="mission-card">
+  <mat-card-title>🚀 Mission Control</mat-card-title>
+
+  <mat-card-content>
+    <button mat-raised-button color="primary" (click)="announce()">
+      Announce Mission
+    </button>
+
+    <div class="astronauts">
+      <app-astronaut
+        *ngFor="let astronaut of astronauts"
+        [astronaut]="astronaut">
+      </app-astronaut>
+    </div>
+
+    <h3 class="history-title">📜 Mission History</h3>
+    <mat-list>
+      <mat-list-item *ngFor="let event of history">
+        {{ event }}
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

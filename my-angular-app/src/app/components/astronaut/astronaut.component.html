@@ -1,0 +1,10 @@
+<mat-card class="astronaut-card">
+  <mat-card-content>
+    {{ astronaut }}: <strong>{{ mission }}</strong>
+    <button mat-button color="accent"
+      (click)="confirm()"
+      [disabled]="!announced || confirmed">
+      Confirm
+    </button>
+  </mat-card-content>
+</mat-card>
